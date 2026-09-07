@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #68458d, #a47ac4);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+nav {
+    background: white;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    color: #68458d;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+nav a:hover {
+    color: #a47ac4;
+}
+
+section {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #68458d;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #7953a0;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.frase {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eee5f6;
+    border-left: 5px solid #68458d;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background: #f4eff9;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.meta {
+    background: #f4eff9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+}
+
+footer {
+    background: #68458d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 25px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
